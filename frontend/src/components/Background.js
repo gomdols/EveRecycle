@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import backgroundLogo from './img/recycling-logo.png';
 
-class App extends Component {
+class Background extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,20 +34,20 @@ class App extends Component {
 
   render() {
     return (
-      <ul>
-        {this.state.data.map(contact => {
-          return (
-            <li key={contact.id}>
-              {contact.username} - {contact.email}
-            </li>
-          );
-        })}
-      </ul>
+      <div>
+        <a>
+          <img
+            src = {backgroundLogo}
+            alt = {'Background-Logo'}
+          />
+        </a>
+        
+      </div>
     );
   }
 }
 
-export default App;
+export default Background;
 
-const container = document.getElementById('app');
-render(<App />, container);
+const container = document.getElementById('background');
+render(<Background />, container);

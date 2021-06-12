@@ -1,1 +1,1 @@
-import App from "./components/App";
+import Background from "./components/Background.js";
