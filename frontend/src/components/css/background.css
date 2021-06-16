@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    z-index: 0;
+}
+.wrapper{
+    width: calc(100% - 46px);
+    height: 100%;
+    background-color: #f3f1ef;
+    padding-right: 46px;
+    position: fixed;
+}
+.logo{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+.logo img{
+    width: 160px;
+    height: 160px;
+    opacity: 0.4;
+    transition: 0.8s;
+}
+.logo img:hover{
+    opacity: 0.8;
+    transform: rotate(120deg) scale(1.2);
+}
+#nav{
+    width: 360px;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(22, 22, 22);
+    height: 100%;
+    top: 0;
+    transition: 0.5s;
+}
+.toggleOn{
+    left: calc(100% - 360px);
+}
+.toggleOff{
+    left: calc(100% - 46px);
+}
+.nav-strip{
+    float: left;
+    height: 100%;
+    width: 46px;
+    cursor: pointer;
+    position: relative;
+}
+.nav-strip > span{
+    display: block;
+    width: 100vh;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 46px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+/* @font-face {
+    font-family: 'BMDOHYEON';
+    src: url('../font/BMDOHYEON_ttf.ttf') format('truetype');
+} */
+h1{
+    font-size: 72px;
+    font-weight: normal;
+    margin-top: 240px;
+    text-align: right;
+    padding: 0 40px;
+    font-family: 'Do Hyeon', sans-serif;
+    /* font-family: 'BMDOHYEON'; */
+}
+.subtitle{
+    text-align: right;
+    font-size: 24px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+.contents > div > p{
+    font-size: 20px;
+    padding: 30px;
+    line-height: 40px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.contents > div{
+    margin-top: 100px;
+}

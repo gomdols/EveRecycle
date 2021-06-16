@@ -1,1 +1,1 @@
-import Background from "./components/Background.js";
+import Main from "./components/Main.js";

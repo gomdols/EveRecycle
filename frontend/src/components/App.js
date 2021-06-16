@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 
 class App extends Component {
   constructor(props) {
@@ -47,6 +46,3 @@ class App extends Component {
 }
 
 export default App;
-
-const container = document.getElementById('app');
-render(<App />, container);
